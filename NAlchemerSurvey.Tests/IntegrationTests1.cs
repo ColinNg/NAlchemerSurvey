@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NSurveyGizmo.Models;
+using NAlchemerSurvey.Models;
 
-namespace NSurveyGizmo.Tests
+namespace NAlchemerSurvey.Tests
 {
     public partial class IntegrationTests
     {

@@ -1,4 +1,4 @@
-﻿namespace NSurveyGizmo.Models
+﻿namespace NAlchemerSurvey.Models
 {
     public class Result
     {

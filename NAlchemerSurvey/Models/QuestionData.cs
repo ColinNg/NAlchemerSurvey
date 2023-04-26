@@ -1,4 +1,4 @@
-namespace NSurveyGizmo
+namespace NAlchemerSurvey
 {
     public class QuestionData
     {

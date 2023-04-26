@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace NSurveyGizmo.Models
+namespace NAlchemerSurvey.Models
 {
     public class Contact
     {

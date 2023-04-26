@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using Newtonsoft.Json;
 
-namespace NSurveyGizmo.Models
+namespace NAlchemerSurvey.Models
 {
     [JsonObject, JsonConverter(typeof(DataItemConverterSurveyQuestion))]
     public class SurveyQuestion

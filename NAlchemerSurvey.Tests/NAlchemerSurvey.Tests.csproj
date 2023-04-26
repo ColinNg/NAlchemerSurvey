@@ -2,18 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    
+
     <IsPackable>false</IsPackable>
-    
+
     <Version>1.0.0.0</Version>
-    <Company>TNTP</Company>
-    <Product>NSurveyGizmo.Tests</Product>
-    <PackageId>NSurveyGizmo.Tests</PackageId>
+    <Company>Orbital Technologies Inc.</Company>
+    <Product>NAlchemerSurvey.Tests</Product>
+    <PackageId>NAlchemerSurvey.Tests</PackageId>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <NeutralLanguage>en</NeutralLanguage>
     <Description>Description here</Description>
-    <Copyright>Copyright ©  2015</Copyright>
+    <Copyright>Copyright ©  2023</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NSurveyGizmo\NSurveyGizmo.csproj" />
+    <ProjectReference Include="..\NAlchemerSurvey\NAlchemerSurvey.csproj" />
   </ItemGroup>
 
 </Project>

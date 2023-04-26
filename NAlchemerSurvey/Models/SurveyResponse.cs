@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
-namespace NSurveyGizmo.Models
+namespace NAlchemerSurvey.Models
 {
     // Here is the magic: When you see this type, use this class to read it.
     // If you want, you can also define the JsonConverter by adding it to
