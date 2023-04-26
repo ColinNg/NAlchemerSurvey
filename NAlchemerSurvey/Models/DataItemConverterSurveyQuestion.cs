@@ -50,7 +50,7 @@ namespace NAlchemerSurvey.Models
                             property.SetValue(value, propVal, null);
                         }
                     }
-                    catch (Exception e)
+                    catch (Exception)
                     {
                         try
                         {
@@ -64,7 +64,7 @@ namespace NAlchemerSurvey.Models
                                 property.SetValue(value, dict, null);
                             }
                         }
-                        catch (Exception ex)
+                        catch (Exception)
                         {
                             reader.Skip();
                         }

@@ -328,7 +328,7 @@ namespace NAlchemerSurvey.Models
             {
                 return jObject[key].ToString();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return string.Empty;
             }
