@@ -6,24 +6,24 @@ using System.Net;
 using System.Text;
 using Newtonsoft.Json;
 using NLog;
-using NSurveyGizmo.Models;
+using NAlchemerSurvey.Models;
 using Polly;
-using Contact              = NSurveyGizmo.Models.Contact;
-using EmailMessage         = NSurveyGizmo.Models.EmailMessage;
-using LocalizableString    = NSurveyGizmo.Models.LocalizableString;
-using QuestionProperties   = NSurveyGizmo.Models.QuestionProperties;
-using Result               = NSurveyGizmo.Models.Result;
-using Survey               = NSurveyGizmo.Models.Survey;
-using SurveyCampaign       = NSurveyGizmo.Models.SurveyCampaign;
-using SurveyQuestion       = NSurveyGizmo.Models.SurveyQuestion;
-using SurveyQuestionOption = NSurveyGizmo.Models.SurveyQuestionOption;
+using Contact              = NAlchemerSurvey.Models.Contact;
+using EmailMessage         = NAlchemerSurvey.Models.EmailMessage;
+using LocalizableString    = NAlchemerSurvey.Models.LocalizableString;
+using QuestionProperties   = NAlchemerSurvey.Models.QuestionProperties;
+using Result               = NAlchemerSurvey.Models.Result;
+using Survey               = NAlchemerSurvey.Models.Survey;
+using SurveyCampaign       = NAlchemerSurvey.Models.SurveyCampaign;
+using SurveyQuestion       = NAlchemerSurvey.Models.SurveyQuestion;
+using SurveyQuestionOption = NAlchemerSurvey.Models.SurveyQuestionOption;
 
-namespace NSurveyGizmo
+namespace NAlchemerSurvey
 {
     public class ApiClient
     {
         public int? BatchSize = null;
-        public string BaseServiceUrl = "https://restapi.surveygizmo.com/v5/";
+        public string BaseServiceUrl = "https://api.alchemer.com/v5/";
         public string ApiToken { get; set; }
         public string ApiTokenSecret { get; set; }
 
@@ -598,8 +598,8 @@ namespace NSurveyGizmo
                         if (!result.result_ok || result.Data == null)
                         {
                             var exMsg = !result.result_ok
-                                ? "SurveyGizmo responded with 'result_ok' equal to false, indicating a problem with their system"
-                                : "Empty response received from SurveyGizmo";
+                                ? "Alchemer Survey responded with 'result_ok' equal to false, indicating a problem with their system"
+                                : "Empty response received from Alchemer Survey";
                             var ex = new WebException(exMsg, WebExceptionStatus.UnknownError);
                             ex.Data.Add("Url", GetScrubbedUrl(pagedUrl));
 

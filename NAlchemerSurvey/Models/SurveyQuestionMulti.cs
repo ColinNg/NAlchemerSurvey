@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace NSurveyGizmo.Models
+namespace NAlchemerSurvey.Models
 {
     public class SurveyQuestionMulti
     {

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <Version>2.0.3.1</Version>
+    <Authors>Sam Firke, Colin Ng</Authors>
+    <Company>Orbital Technologies Inc.</Company>
+    <Product>NAlchemerSurvey</Product>
+    <PackageId>NAlchemerSurvey</PackageId>
+    <AssemblyVersion>2.0.3.1</AssemblyVersion>
+    <FileVersion>2.0.3.1</FileVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Description>.NET client for the Alchemer Survey REST API</Description>
+    <Copyright>Copyright ©  2017</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/ColinNg/NAlchemerSurvey/</PackageProjectUrl>
+    <!--<PackageIconUrl>Icon URL</PackageIconUrl>-->
+    <RepositoryUrl>https://github.com/ColinNg/NAlchemerSurvey/</RepositoryUrl>
+    <!--<RepositoryType>Repo type</RepositoryType>-->
+    <PackageTags>alchemer survey rest api surveygizmo surveys</PackageTags>
+    <PackageReleaseNotes>Retrieving dictionary values from a JObject in DataItemConverter is more stable</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NLog" Version="5.1.3" />
+    <PackageReference Include="Polly" Version="7.2.3" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <None Include="..\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+</Project>

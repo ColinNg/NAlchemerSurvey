@@ -4,14 +4,14 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NSurveyGizmo.Models;
-using Contact = NSurveyGizmo.Models.Contact;
-using LocalizableString = NSurveyGizmo.Models.LocalizableString;
-using QuestionOptions = NSurveyGizmo.Models.QuestionOptions;
-using QuestionProperties = NSurveyGizmo.Models.QuestionProperties;
-using SurveyQuestionOption = NSurveyGizmo.Models.SurveyQuestionOption;
+using NAlchemerSurvey.Models;
+using Contact = NAlchemerSurvey.Models.Contact;
+using LocalizableString = NAlchemerSurvey.Models.LocalizableString;
+using QuestionOptions = NAlchemerSurvey.Models.QuestionOptions;
+using QuestionProperties = NAlchemerSurvey.Models.QuestionProperties;
+using SurveyQuestionOption = NAlchemerSurvey.Models.SurveyQuestionOption;
 
-namespace NSurveyGizmo.Tests
+namespace NAlchemerSurvey.Tests
 {
     [TestClass]
     public partial class IntegrationTests
@@ -28,7 +28,7 @@ namespace NSurveyGizmo.Tests
 
             var questions = apiClient.GetQuestions(2687802).Where(q => q._type == "SurveyQuestion").ToList();
 
-            var gizmoQuestions = questions.Select(q => new
+            var surveyQuestions = questions.Select(q => new
             {
                 ID = q.id.ToString(),
                 Question = q.title != null ? q.title + joinOptions(q.options) : "",
@@ -39,9 +39,9 @@ namespace NSurveyGizmo.Tests
                 AnswerFormat = q._type ?? ""
             }).ToList();
 
-            foreach (var gizmoQuestion in gizmoQuestions)
+            foreach (var surveyQuestion in surveyQuestions)
             {
-                Trace.WriteLine(gizmoQuestion.QCode);
+                Trace.WriteLine(surveyQuestion.QCode);
             }
         }
 

@@ -6,11 +6,11 @@
     <title>$title$</title>
     <authors>$author$, Bernard Wolff, Robert DeSimone</authors>
     <owners>$author$</owners>
-    <projectUrl>https://github.com/tntp/NSurveyGizmo</projectUrl>
+    <projectUrl>https://github.com/ColinNg/NAlchemerSurvey</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>Updated dependencies (Polly, NLog, Json.NET)</releaseNotes>
-    <copyright>Copyright 2017</copyright>
-    <tags>surveygizmo surveys rest api</tags>
+    <copyright>Copyright 2023</copyright>
+    <tags>alchemer survey rest api surveygizmo surveys</tags>
   </metadata>
 </package>

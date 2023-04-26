@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace NSurveyGizmo.Models
+namespace NAlchemerSurvey.Models
 {
     // there are other properties, but right now we only need the id, name, and status. we'll add these when we need them.
     // uri, SSL, tokenvariables, limit_responses, close_message, language, datecreated, datemodified

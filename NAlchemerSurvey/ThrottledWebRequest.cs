@@ -5,7 +5,7 @@ using System.Threading;
 using System.Xml;
 using Newtonsoft.Json;
 
-namespace NSurveyGizmo
+namespace NAlchemerSurvey
 {
     public interface IThrottledWebRequest
     {
@@ -79,7 +79,7 @@ namespace NSurveyGizmo
             var responseStream = response.GetResponseStream();
             if (responseStream == null)
             {
-                throw new WebException("Unable to open response stream from SurveyGizmo.");
+                throw new WebException("Unable to open response stream from Alchemer Survey.");
             }
             doc.Load(responseStream);
             return doc;
@@ -91,7 +91,7 @@ namespace NSurveyGizmo
             var responseStream = Create(url).GetResponse().GetResponseStream();
             if (responseStream == null)
             {
-                throw new WebException("Unable to open response stream from SurveyGizmo.");
+                throw new WebException("Unable to open response stream from Alchemer Survey.");
             }
 
             using (var sr = new StreamReader(responseStream))

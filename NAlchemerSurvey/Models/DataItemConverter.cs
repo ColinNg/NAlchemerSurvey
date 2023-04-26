@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace NSurveyGizmo.Models
+namespace NAlchemerSurvey.Models
 {
     public class DataItemConverter : JsonConverter
     {
@@ -328,7 +328,7 @@ namespace NSurveyGizmo.Models
             {
                 return jObject[key].ToString();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return string.Empty;
             }

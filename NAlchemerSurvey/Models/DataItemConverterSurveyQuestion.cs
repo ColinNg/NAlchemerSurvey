@@ -4,7 +4,7 @@ using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace NSurveyGizmo.Models
+namespace NAlchemerSurvey.Models
 {
     public class DataItemConverterSurveyQuestion : JsonConverter
     {
@@ -50,7 +50,7 @@ namespace NSurveyGizmo.Models
                             property.SetValue(value, propVal, null);
                         }
                     }
-                    catch (Exception e)
+                    catch (Exception)
                     {
                         try
                         {
@@ -64,7 +64,7 @@ namespace NSurveyGizmo.Models
                                 property.SetValue(value, dict, null);
                             }
                         }
-                        catch (Exception ex)
+                        catch (Exception)
                         {
                             reader.Skip();
                         }
